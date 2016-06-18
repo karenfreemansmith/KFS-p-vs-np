@@ -1,4 +1,12 @@
 //alert("jQuery is working on " + $("h1").text()); //test for jQuery linked and loaded correctly
+$("#findFactors").click(function() {
+  $("#results1").html(findFactors($("#largeNumber").val()));
+});
+var students=getStudents(400);
+var rooms=assignRooms(50,students);
+
+$("#students").append(students);
+$("#rooms").append(rooms);
 
 function findFactors(x) {
   var factors="";
@@ -16,6 +24,10 @@ function findFactors(x) {
   return factors;
 }
 
-$("#findFactors").click(function() {
-  $("#results1").html(findFactors($("#largeNumber").val()));
-});
+function getStudents(x) {
+  return "<li>John Doe, M, Smoker</li>\n<li>Jane Doe, F, Non-Smoker</li>";
+}
+
+function assignRooms(x) {
+  return "<li>John Doe, M, Smoker</li>\n<li>Jane Doe, F, Non-Smoker</li>";
+}

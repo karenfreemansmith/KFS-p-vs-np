@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-compatible">
     <meta name="viewport" value="width=device-width, initial-scale=1">
-    <title>My Project Title</title>
+    <title>P vs NP Problems</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
@@ -13,7 +13,10 @@
       <div class="row">
         <h1>Problem #1:</h1>
         <div class="col-xs-6">
-          <h3>If 7 * 17 = 119, then find x * y = 119 <br>(how to do it quickly for large numbers?)</h3>
+          <h3>If 7 * 17 = 119, <br>then find x * y = 119</h3>
+          <p>(how to do it quickly for large numbers?)
+            <br>(or factor down to only prime numbers?)
+          </p>
         </div>
         <div class="col-xs-6">
           <strong>Enter number to factor:</strong><br>
@@ -33,7 +36,23 @@
           </ul>
         </div>
         <div class="col-xs-6"></div>
-
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <h3>Student List</h3>
+          <ol  id="students"></ol>
+        </div>
+        <div class="col-xs-4">
+          <h3>Incompatible Pairs</h3>
+          <ol id="pairs">
+            <li>No smokers with non-smokers</li>
+            <li>No males with females</li>
+          </ol>
+        </div>
+        <div class="col-xs-4">
+          <h3>Room Assignments</h3>
+          <ol id="rooms"></ol>
+        </div>
       </div>
     </div>
   <script src="js/jquery-1.12.2.js"></script>
